@@ -1,0 +1,118 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forgotPassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_below="@+id/topText"
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Ajouter un parcours"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="normal|bold"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/view2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/titreParcours"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Titre du parcours"
+            android:inputType="text"
+            android:padding="16dp"
+            tools:ignore="RtlCompat" />
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/categorieParcours"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Catégorie"
+            android:inputType="text"
+            android:padding="16dp"
+            tools:ignore="RtlCompat" />
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/descriptionParcours"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            tools:ignore="RtlCompat" />
+
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnAjouterParcours"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounder_bg"
+            android:text="Ajouter"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            app:backgroundTint="@color/colorPrimary"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

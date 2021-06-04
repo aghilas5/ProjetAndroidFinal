@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "693463083713",
+    "firebase_url": "https://projetsantemobile-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "projetsantemobile",
+    "storage_bucket": "projetsantemobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:693463083713:android:a51943dd57b7958d660240",
+        "android_client_info": {
+          "package_name": "com.example.e_sante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "693463083713-nfo0let18prghec2hes26fm24uu76h86.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmE9FAgKTCvnCCGRDksPvtvF9ayKILv6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "693463083713-nfo0let18prghec2hes26fm24uu76h86.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

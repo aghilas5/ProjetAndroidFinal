@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardElevation="5dp"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/doctor"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FF018786" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NomMedecin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr. Nom et prenom"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/Specialite"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Spécialiste en maladies cardio-vasculaires"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="10dp"
+                android:textColor="#FF828591"
+
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FF018786" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:id="@+id/Tel"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="07 75 43 69 80"
+                    android:textColor="#828591"
+                    app:srcCompat="@android:drawable/ic_menu_mylocation"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="a.aimad1999@gmail.com"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#828591"
+                        app:srcCompat="@android:drawable/ic_menu_compass"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+                        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:id="@+id/expandable"
+                >
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF828591"
+                    android:textSize="10dp"
+                    android:text="Adresse:"
+                    ></TextView>
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="9dp"
+                    android:textColor="#FF828591"
+                    android:text="6 rue gaspard coriolis, 37200 Tours"
+                    android:id="@+id/adressemedecin"
+                    ></TextView>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,131 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forgotPassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_below="@+id/topText"
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Ajouter une structure"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="normal|bold"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/view2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/NomStructure"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Nom de la structure"
+            android:inputType="text"
+            android:padding="16dp"
+            tools:ignore="RtlCompat" />
+
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/disciplineStructure"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Discipline de la stucture"
+            android:inputType="text"
+            android:padding="16dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Séparez chaque deux pathologie par une virgule"
+            android:textColor="#E67272"
+            android:textSize="10dp"
+            android:textStyle="normal|bold"
+            />
+
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/listePathologie"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Liste des pathologies"
+            android:inputType="textMultiLine"
+            android:padding="16dp"
+            tools:ignore="RtlCompat" />
+
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnAjouter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounder_bg"
+            android:text="Ajouter"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            app:backgroundTint="@color/colorPrimary"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

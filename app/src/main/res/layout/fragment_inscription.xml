@@ -1,0 +1,221 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/forgotPassword"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="#29abe2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_below="@+id/topText"
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/wave1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Inscription"
+            android:layout_gravity="center"
+            android:textColor="#F3F7FA"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/view2"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputNom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="text"
+            android:padding="8dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputPrenom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Prenom"
+            android:inputType="text"
+            android:padding="8dp"
+            android:layout_marginTop="6dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputAge"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="text"
+            android:padding="8dp"
+            android:layout_marginTop="6dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputTel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Tel"
+            android:inputType="text"
+            android:padding="8dp"
+            android:layout_marginTop="6dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputNumAssurance"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:layout_marginTop="6dp"
+            android:hint="Numero assurance"
+            android:inputType="text"
+            android:padding="8dp"
+            android:visibility="gone"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputSpecialite"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:layout_marginTop="6dp"
+            android:hint="Spécialité"
+            android:inputType="text"
+            android:padding="8dp"
+            android:visibility="gone"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputEmailI"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:layout_marginTop="6dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="8dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputAdresse"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:layout_marginTop="6dp"
+            android:hint="Adresse"
+            android:inputType="text"
+            android:padding="8dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputPasswordI"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="8dp"
+            tools:ignore="RtlCompat" />
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/inputstatutI"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounder_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/topText"
+            android:ems="10"
+            android:hint="Statut"
+            android:enabled="false"
+            android:inputType="text"
+            android:padding="8dp"
+            tools:ignore="RtlCompat" />
+
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/btnInscription"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounder_bg"
+            android:text="S'INSCRIRE"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:backgroundTint="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardElevation="5dp"
+    android:layout_margin="5dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/seance"
+            >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="1dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="#FF018786" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titre_Seance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seance n°69"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parcours: "
+                android:textSize="11dp"
+                android:textColor="#4B4D55"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/parcoursSeance"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Parcours ta3 khra "
+                    android:textSize="10dp"
+                    android:textColor="#FF828591"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activité: "
+                    android:textSize="11dp"
+                    android:textColor="#4B4D55"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/activiteSeance"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="Activité ta3 khra "
+                    android:textSize="10dp"
+                    android:textColor="#FF828591"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Structure: "
+                    android:textSize="11dp"
+                    android:textColor="#4B4D55"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/structureSeance"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Structure ta3 khra "
+                    android:textSize="10dp"
+                    android:textColor="#FF828591"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:background="#FF018786" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:id="@+id/dateSeance"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="17/05/2021 à 12h45"
+                    android:textColor="#828591"
+                    app:srcCompat="@android:drawable/ic_menu_mylocation"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/duree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:text="Durée: "
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#828591"
+                        app:srcCompat="@android:drawable/ic_menu_compass"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:layout_alignRight="@+id/duree"
+                        android:id="@+id/dureeSeance"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="50h"
+                        android:textSize="10dp"
+                        android:textColor="#828591"
+                        app:srcCompat="@android:drawable/ic_menu_compass"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
